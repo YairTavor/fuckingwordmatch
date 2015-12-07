@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic&subset=latin,hebrew);
+
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.word-form .form-group {
+    margin: 20px;
+    display: block;
+}
+
+.jumbotron {
+    position: absolute;
+    width: 100vw;
+    top:52px;
+    bottom:0;
+}
+
+.go-in {
+    z-index: 2;
+    animation: in 0.7s ease-in-out;
+}
+
+.current {
+    z-index: 1;
+}
+
+@keyframes in {
+    from {
+        left: 100vw;
+    }
+
+    to {
+        left: 0;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fucking Word Match</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="logo">the Fucking Word Match game</span>
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#" title="settings" id="settings-button">
+                    <i class="glyphicon glyphicon-cog"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="question" class="jumbotron centered current">
+    <p>
+        What the fuck is
+    </p>
+
+    <h1 class="word"></h1>
+
+    <div class="form-inline word-form">
+        <div class="form-group">
+            <label for="answer">I think it's</label>
+            <input type="text" class="form-control" id="answer" placeholder="Just fucking type here">
+        </div>
+    </div>
+
+    <p>
+        <a id="answer-button" class="btn btn-info btn-lg" href="#" role="button">See if i'm right</a>
+        <a id="give-up-button" class="btn btn-danger btn-lg" href="#" role="button">I have no fucking clue</a>
+    </p>
+</div>
+
+<div id="right-answer" class="jumbotron centered">
+
+    <h1> You are right motherfucker!</h1>
+
+    <p>
+        <em class="word"></em> means <em class="translation"></em>
+    </p>
+
+    <p>
+        <a id="question-button-right" class="btn btn-success btn-lg" href="#" role="button">Hell yea! gimmy anotha one!</a>
+    </p>
+</div>
+
+<div id="wrong-answer" class="jumbotron centered">
+
+    <h1> You are one stupid son of a bitch!</h1>
+
+    <p>
+        <em class="word"></em> means <em class="translation"></em>
+    </p>
+
+    <p>
+        <a id="question-button-wrong" class="btn btn-info btn-lg" href="#" role="button">Fuck that, let me try another one</a>
+    </p>
+</div>
+
+<div id="settings" class="jumbotron centered">
+    <button class="btn btn-large btn-info save-settings">Save</button>
+    <hr />
+    <div id="setting-form" class="form-inline word-form">
+        <div class="form-group">
+            <label>Original</label>
+            <input type="text" class="form-control new-original-word">
+            <label>Translation</label>
+            <input type="text" class="form-control new-translated-word">
+            <button id="add-translation-button" class="btn btn-success">Add New</button>
+        </div>
+    </div>
+    <hr />
+    <button class="btn btn-large btn-info save-settings">Save</button>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</html>
